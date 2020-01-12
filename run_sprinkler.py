@@ -66,7 +66,7 @@ def integrate(t, vals):
 
 # Calls weather underground history api
 def get_wu_history(config, day):
-    API_URL = 'http://api.wunderground.com/api/{key}/history_{day}/q/{state}/{town}.json'
+    API_URL = 'https://home.openweathermap.org/api_keys'
     return requests.get(API_URL.format(key=config['api_key'],
                                        day=day,
                                        state=config['state'],
